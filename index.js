@@ -10,7 +10,7 @@ const hotels = [];
     await driver.manage().window().maximize();
     await driver.get('https://www.booking.com/city/ma/rabat.fr.html');
     await sleep(1000);
-    
+    console.log('coki');
     for(let i=1; i<=4; i++){
         
         var h3 = await driver.findElement(By.xpath("/html/body/div[1]/div/div[5]/div[1]/div[2]/div[4]/div["+ i +"]/div[2]/div[1]/div[1]/header/a/h3/span[1]")).getText();
